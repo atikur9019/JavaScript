@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    
+    <!-- <h1>Hello World</h1>
+    <button>Click Me</button> -->
+
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" name = "" id="name"><br>
+
+        <label for="email">Email</label>
+        <input type="email" name = "" id="email"><br>
+
+        <input type="range" name="" id=""><br>
+        <input type="color" name="" id=""><br>
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" name="" id="cricket"><br>
+        <input type="submit" value="Submit">
+
+        <h1></h1>
+    </form>
+
+    <script>
+        // let title = document.querySelector('h1');
+        // let button = document.querySelector('button');
+        // button.addEventListener('click', function() {
+
+        //     title.style.backgroundColor = '#55efc4';
+        //     title.style.color = '#f2f2f2';
+        //     title.style.textAlign = 'center';
+        //     title.style.padding = '15px';
+        //     title.style.borderRadius = '10px';
+        // });
+        
+        
+        // button.style.backgroundColor = '#00b894';
+        // button.style.color = '#fff';
+        // button.style.padding = '10px 20px';
+        // button.style.border = 'none';
+        // button.style.borderRadius = '500px 455px';
+        
+
+
+        let inputs = document.querySelectorAll('input');
+        let form = document.querySelector('form');
+        let submit = document.querySelector('input[type="submit"]');
+        let title  = document.querySelector('h1');
+
+        submit.addEventListener('click', function(e) {
+            e.preventDefault();
+            let name = inputs[0].value;
+            title.innerText = name;
+        });
+
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #2d3250;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .container:hover > :not(:hover) {
+            opacity: 0.5;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 0px;
+            font-size: 20px;
+            background: #afb3fa;
+            outline: none;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: #111122;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="c1" data-customer="Customer 1">C1</button>
+        <button class="c2" data-customer="Customer 2">C2</button>
+        <button class="c3" data-customer="Customer 3">C3</button>
+    </div>
+    <!-- js-script -->
+     <script src="sync.js"></script>
+</body>
+</html>

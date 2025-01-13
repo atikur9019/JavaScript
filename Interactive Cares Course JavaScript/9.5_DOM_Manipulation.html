@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+<!--     
+        <div>
+            <h1>Hello World</h1>
+            <p>Hello jupetar</p>
+        </div>   -->
+
+
+        <div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+
+        <script>
+            // let div = document.querySelector('div');
+            // let child = div.children;
+            // // child[1].style.color = 'red';
+            // for (let i = 0; i < child.length; i++) {
+            //     child[i].style.color = 'red';
+            // }
+
+
+            // let title = document.querySelector('h1');
+            // // console.log(title.parentElement);
+            // title.parentElement.style.color = 'red';
+                  
+
+            // let item =document.querySelector('li');
+            // // item.style.color = 'red';
+            // item.nextElementSibling.nextElementSibling.style.color = 'red';
+            
+            let item = document.querySelector('li:last-child');
+
+            item.previousElementSibling.previousElementSibling.style.color = 'red';
+            
+            
+            
+            </script>
+
+</body>
+</html>
